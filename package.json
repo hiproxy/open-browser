@@ -1,6 +1,6 @@
 {
   "name": "op-browser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Open browser window and set proxy",
   "main": "lib/index.js",
   "scripts": {
