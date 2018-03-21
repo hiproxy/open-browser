@@ -33,7 +33,7 @@ Browser
 
 <a name="op-browser.open"></a>
 
-### op-browser.open(browser, url, proxyURL, pacFileURL) ⇒ <code>Promise</code>
+### op-browser.open(browser, url, proxyURL, pacFileURL, bypassList) ⇒ <code>Promise</code>
 open browser window, if the `pacFileURL` is not empty, will use `proxy auto-configuration`
 
 **Kind**: static method of [<code>op-browser</code>](#op-browser)  
@@ -44,6 +44,7 @@ open browser window, if the `pacFileURL` is not empty, will use `proxy auto-conf
 | url | <code>String</code> | the url that to open |
 | proxyURL | <code>String</code> | the proxy url, format: `http://<hostname>[:[port]]` |
 | pacFileURL | <code>String</code> | the proxy url, format: `http://<hostname>[:[port]]/[pac-file-name]` |
+| bypassList | <code>String</code> | the list of hosts for whom we bypass proxy settings and use direct connections, See: "[net/proxy/proxy_bypass_rules.h](https://cs.chromium.org/chromium/src/net/proxy_resolution/proxy_bypass_rules.h?sq=package:chromium&type=cs)" for the format of these rules |
 
 <a name="op-browser.detect"></a>
 
